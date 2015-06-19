@@ -41,12 +41,19 @@ public class ConverterTest {
      * Test of add method, of class Calculator.
      */
     @Test
-    public void testToRoman() {
+    public void testToRomanWithNumber1() {
         System.out.println("Toroman method converts 1 to 'I'");
-        int x = 2;
+        int x = 1;
         Converter instance = new Converter();
         String expResult = "I";
         String result = instance.toRoman(x);
         assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testToRomanWithNumberTwo() {
+        System.out.println("Toroman method converts 2 to 'II'");
+        Converter instance = new Converter();
+        assertEquals("II", instance.toRoman(2));
     }
 }
