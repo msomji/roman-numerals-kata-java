@@ -74,4 +74,11 @@ public class ConverterTest {
         Converter instance = new Converter();
         assertEquals("V", instance.toRoman(5));
     }
+    @Test
+    public void testToRomanwithNumberfourtyfive(){
+        System.out.println("Converts 45 to 'XLV'");
+        Converter instance = new Converter();
+        assertEquals("XLV", instance.toRoman(45));
+    }
+    
 }

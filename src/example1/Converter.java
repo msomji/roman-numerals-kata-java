@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 
 public class Converter {
-    public static final String[] uniqueRomanNumerals = {"IX","V","IV","I"};
-    public static final int[] uniqueArabicNumerals = {9,5,4,1};
+    public static final String[] uniqueRomanNumerals = {"L","XL","X","IX","V","IV","I"};
+    public static final int[] uniqueArabicNumerals = {50,40,10,9,5,4,1};
             
     
     public String toRoman(int x){
