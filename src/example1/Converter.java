@@ -19,15 +19,6 @@ public class Converter {
                 }
             }
         };
-        
-        
-//            if the number is greater than the biggest number take that
-//            if (number >= uniqueArabicNumerals[i]){
-//                roman+=uniqueRomanNumerals[i];
-//                number-=uniqueArabicNumerals[i];
-//            }
-        
-      
         return roman;
     }
     

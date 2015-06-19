@@ -92,4 +92,16 @@ public class ConverterTest {
         Converter instance = new Converter();
         assertEquals("CCCLXXII", instance.toRoman(372));
     }
+    @Test
+    public void testToRomanWithNumer1066(){
+        System.out.println("Converts 1066 to 'MLXVI'");
+        Converter instance = new Converter();
+        assertEquals("MLXVI", instance.toRoman(1066));
+    }
+    @Test
+    public void testToRomanWithNumer1989(){
+        System.out.println("Converts 1989 to 'MCMLXXXIX'");
+        Converter instance = new Converter();
+        assertEquals("MCMLXXXIX", instance.toRoman(1989));
+    }
 }
