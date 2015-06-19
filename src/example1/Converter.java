@@ -21,9 +21,12 @@ public class Converter {
         };
         return roman;
     }
-    
+//    while the string length is longer than 0 keep looping.
+//    if the first character matches a string in the array then move forward and check if the first and second 
+//            characters are a match on the array, if so then use that and remove those two characters from the string
+//                    repeat
     public int toArabic(String x){
-        int arabic = 0;
+        int arabic = 0;        
         if (x == "II"){
             arabic = 2;
         }else {
