@@ -110,22 +110,28 @@ public class ConverterTest {
      */
     @Test
     public void testToArabicWithNumber1() {
-        System.out.println("Toroman method converts 'I' to 1");
+        System.out.println("toArabic method converts 'I' to 1");
         Converter instance = new Converter();
         assertEquals(1, instance.toArabic("I"));
     }
     @Test
+    public void testToArabicWithNumber5() {
+        System.out.println("toArabic method converts 'V' to 5");
+        Converter instance = new Converter();
+        assertEquals(5, instance.toArabic("V"));
+    }
+    @Test
     public void testToArabicWithNumberTwo() {
-        System.out.println("Toroman method converts 'II' to 2");
+        System.out.println("toArabic method converts 'II' to 2");
         Converter instance = new Converter();
         assertEquals(2, instance.toArabic("II"));
     }
-//    @Test
-//    public void testToRomanWithNumberThree(){
-//        System.out.println("ToRoman menthod converts 3 to III");
-//        Converter instance = new Converter();
-//        assertEquals("III", instance.toRoman(3));
-//    }
+    @Test
+    public void testToArabicWithNumber3() {
+        System.out.println("toArabic method converts 'III' to 3");
+        Converter instance = new Converter();
+        assertEquals(3, instance.toArabic("III"));
+    }
 //    @Test 
 //    public void testToRomanwithNumberFour(){
 //        System.out.println("Converts 4 to 'IV'");

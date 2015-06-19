@@ -26,13 +26,20 @@ public class Converter {
 //            characters are a match on the array, if so then use that and remove those two characters from the string
 //                    repeat
     public int toArabic(String x){
-        int arabic = 0;        
-        if (x == "II"){
-            arabic = 2;
-        }else {
-            arabic = 1;
+        int arabic = 0;  
+        String roman = x;
+        while (roman.length() !=0){
+            for (int i=0; i < uniqueRomanNumerals.length; i++){
+                if (roman == uniqueRomanNumerals[i]){
+                    arabic += uniqueArabicNumerals[i];
+                    if (uniqueRomanNumerals[i].length() == 2){
+                       roman = roman.substring(2);
+                    }else{
+                       roman = roman.substring(1);
+                    }
+                }
+            }
         }
-        
         return arabic;
         }
     
