@@ -62,4 +62,10 @@ public class ConverterTest {
         Converter instance = new Converter();
         assertEquals("III", instance.toRoman(3));
     }
+    @Test 
+    public void testToToRomanwithNumberFour(){
+        System.out.println("Converts 4 to 'IV'");
+        Converter instance = new Converter();
+        assertEquals("IV", instance.toRoman(4));
+    }
 }
