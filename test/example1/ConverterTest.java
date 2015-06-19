@@ -80,5 +80,16 @@ public class ConverterTest {
         Converter instance = new Converter();
         assertEquals("XLV", instance.toRoman(45));
     }
-    
+    @Test
+    public void testToRomanWithNumberThirtyNine(){
+        System.out.println("Converts 39 to 'XXXIX'");
+        Converter instance = new Converter();
+        assertEquals("XXXIX", instance.toRoman(39));
+    }
+    @Test
+    public void testToRomanWithNumberThreeHunderedSeventyTwo(){
+        System.out.println("Converts 372 to 'CCCLXXII'");
+        Converter instance = new Converter();
+        assertEquals("CCCLXXII", instance.toRoman(372));
+    }
 }
