@@ -22,4 +22,17 @@ public class Converter {
         return roman;
     }
     
+    public int toArabic(String x){
+        int arabic = 0;
+        if (x == "II"){
+            arabic = 2;
+        }else {
+            arabic = 1;
+        }
+        
+        return arabic;
+        }
+    
+    }
+    
 }

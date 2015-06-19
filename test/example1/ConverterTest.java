@@ -13,7 +13,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Unit test for the calculator class
+ * Unit test of Converter
  * @author maisamsomji
  */
 public class ConverterTest {
@@ -38,7 +38,7 @@ public class ConverterTest {
     }
 
     /**
-     * Test of add method, of class Calculator.
+     * Test of toRoman method, of class Converter.
      */
     @Test
     public void testToRomanWithNumber1() {
@@ -104,4 +104,68 @@ public class ConverterTest {
         Converter instance = new Converter();
         assertEquals("MCMLXXXIX", instance.toRoman(1989));
     }
+    
+      /**
+     * Test of toArabic method, of class Converter.
+     */
+    @Test
+    public void testToArabicWithNumber1() {
+        System.out.println("Toroman method converts 'I' to 1");
+        Converter instance = new Converter();
+        assertEquals(1, instance.toArabic("I"));
+    }
+    @Test
+    public void testToArabicWithNumberTwo() {
+        System.out.println("Toroman method converts 'II' to 2");
+        Converter instance = new Converter();
+        assertEquals(2, instance.toArabic("II"));
+    }
+//    @Test
+//    public void testToRomanWithNumberThree(){
+//        System.out.println("ToRoman menthod converts 3 to III");
+//        Converter instance = new Converter();
+//        assertEquals("III", instance.toRoman(3));
+//    }
+//    @Test 
+//    public void testToRomanwithNumberFour(){
+//        System.out.println("Converts 4 to 'IV'");
+//        Converter instance = new Converter();
+//        assertEquals("IV", instance.toRoman(4));
+//    }
+//    @Test
+//    public void testToRomanwithNumberfive(){
+//        System.out.println("Converts 5 to 'V'");
+//        Converter instance = new Converter();
+//        assertEquals("V", instance.toRoman(5));
+//    }
+//    @Test
+//    public void testToRomanwithNumberfourtyfive(){
+//        System.out.println("Converts 45 to 'XLV'");
+//        Converter instance = new Converter();
+//        assertEquals("XLV", instance.toRoman(45));
+//    }
+//    @Test
+//    public void testToRomanWithNumberThirtyNine(){
+//        System.out.println("Converts 39 to 'XXXIX'");
+//        Converter instance = new Converter();
+//        assertEquals("XXXIX", instance.toRoman(39));
+//    }
+//    @Test
+//    public void testToRomanWithNumberThreeHunderedSeventyTwo(){
+//        System.out.println("Converts 372 to 'CCCLXXII'");
+//        Converter instance = new Converter();
+//        assertEquals("CCCLXXII", instance.toRoman(372));
+//    }
+//    @Test
+//    public void testToRomanWithNumer1066(){
+//        System.out.println("Converts 1066 to 'MLXVI'");
+//        Converter instance = new Converter();
+//        assertEquals("MLXVI", instance.toRoman(1066));
+//    }
+//    @Test
+//    public void testToRomanWithNumer1989(){
+//        System.out.println("Converts 1989 to 'MCMLXXXIX'");
+//        Converter instance = new Converter();
+//        assertEquals("MCMLXXXIX", instance.toRoman(1989));
+//    }
 }
