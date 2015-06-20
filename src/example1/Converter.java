@@ -38,9 +38,9 @@ public class Converter {
             }
         }
         
-        
-        int fourCount = x.split("IV", -1).length-1;
-        arabic -= fourCount*2;
+        int fourAndNineCount = x.split("IV", -1).length-1;
+        fourAndNineCount += x.split("IX", -1).length-1;
+        arabic -= fourAndNineCount*2;
         return arabic;
         }
     public static final String[] doubleRoman = {"CM","CD","XC","XL","IX","IV"};

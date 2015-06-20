@@ -138,8 +138,14 @@ public class ConverterTest {
         Converter instance = new Converter();
         assertEquals(4, instance.toArabic("IV"));
     }
+    @Test
+    public void testToArabicWithNumber9() {
+        System.out.println("toArabic method converts 'IX' to 9");
+        Converter instance = new Converter();
+        assertEquals(9, instance.toArabic("IX"));
+    }
         
-
+    
 //   @Test
 //    public void testToArabicWithNumber45() {
 //        System.out.println("toArabic method converts 'XLV' to 45");
