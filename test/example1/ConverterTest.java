@@ -131,47 +131,19 @@ public class ConverterTest {
         System.out.println("toArabic method converts 'III' to 3");
         Converter instance = new Converter();
         assertEquals(3, instance.toArabic("III"));
-    }
-//    @Test 
-//    public void testToRomanwithNumberFour(){
-//        System.out.println("Converts 4 to 'IV'");
+//    }
+
+//   @Test
+//    public void testToArabicWithNumber45() {
+//        System.out.println("toArabic method converts 'XLV' to 45");
 //        Converter instance = new Converter();
-//        assertEquals("IV", instance.toRoman(4));
+//        assertEquals(45, instance.toArabic("XLV"));
 //    }
 //    @Test
-//    public void testToRomanwithNumberfive(){
-//        System.out.println("Converts 5 to 'V'");
+//    public void testToArabicWithNumber39() {
+//        System.out.println("toArabic method converts 'XXXIX' to 39");
 //        Converter instance = new Converter();
-//        assertEquals("V", instance.toRoman(5));
-//    }
-//    @Test
-//    public void testToRomanwithNumberfourtyfive(){
-//        System.out.println("Converts 45 to 'XLV'");
-//        Converter instance = new Converter();
-//        assertEquals("XLV", instance.toRoman(45));
-//    }
-//    @Test
-//    public void testToRomanWithNumberThirtyNine(){
-//        System.out.println("Converts 39 to 'XXXIX'");
-//        Converter instance = new Converter();
-//        assertEquals("XXXIX", instance.toRoman(39));
-//    }
-//    @Test
-//    public void testToRomanWithNumberThreeHunderedSeventyTwo(){
-//        System.out.println("Converts 372 to 'CCCLXXII'");
-//        Converter instance = new Converter();
-//        assertEquals("CCCLXXII", instance.toRoman(372));
-//    }
-//    @Test
-//    public void testToRomanWithNumer1066(){
-//        System.out.println("Converts 1066 to 'MLXVI'");
-//        Converter instance = new Converter();
-//        assertEquals("MLXVI", instance.toRoman(1066));
-//    }
-//    @Test
-//    public void testToRomanWithNumer1989(){
-//        System.out.println("Converts 1989 to 'MCMLXXXIX'");
-//        Converter instance = new Converter();
-//        assertEquals("MCMLXXXIX", instance.toRoman(1989));
-//    }
+//        assertEquals(39, instance.toArabic("XXXIX"));
+//        }
+
 }

@@ -27,22 +27,20 @@ public class Converter {
 //                    repeat
     public int toArabic(String x){
         int arabic = 0;  
-        String roman = x;
-        while (roman.length() !=0){
-            for (int i=0; i < uniqueRomanNumerals.length; i++){
-                if (roman == uniqueRomanNumerals[i]){
-                    arabic += uniqueArabicNumerals[i];
-                    if (uniqueRomanNumerals[i].length() == 2){
-                       roman = roman.substring(2);
-                    }else{
-                       roman = roman.substring(1);
-                    }
+        
+        for (int i=0; i < x.length(); i++){
+            for(int j=0; j<=uniqueRomanNumerals.length-1; j++ ){
+                char letter = x.charAt(i);
+                String str = Character.toString(letter);
+                if (uniqueRomanNumerals[j].equals(str)){
+                    arabic+= uniqueArabicNumerals[j];
                 }
             }
         }
+        
         return arabic;
         }
     
     }
     
-}
+
