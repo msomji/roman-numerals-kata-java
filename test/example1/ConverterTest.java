@@ -104,7 +104,6 @@ public class ConverterTest {
         Converter instance = new Converter();
         assertEquals("MCMLXXXIX", instance.toRoman(1989));
     }
-    
       /**
      * Test of toArabic method, of class Converter.
      */
@@ -163,5 +162,16 @@ public class ConverterTest {
         Converter instance = new Converter();
         assertEquals(494, instance.toArabic("CDXCIV"));
     }
-
+    @Test
+    public void testToArabicWithNumber1066() {
+        System.out.println("toArabic method converts 'MLXVI' to 1066");
+        Converter instance = new Converter();
+        assertEquals(1066, instance.toArabic("MLXVI"));
+    }
+    @Test
+    public void testToArabicWithNumber1989() {
+        System.out.println("toArabic method converts 'MCMLXXXIX' to 1989");
+        Converter instance = new Converter();
+        assertEquals(1989, instance.toArabic("MCMLXXXIX"));
+    } 
 }
