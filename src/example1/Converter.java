@@ -40,6 +40,12 @@ public class Converter {
         
         int fourAndNineCount = x.split("IV", -1).length-1;
         fourAndNineCount += x.split("IX", -1).length-1;
+        
+        int fourtyAndNintyCount = x.split("XL", -1).length-1;
+        fourtyAndNintyCount += x.split("XC", -1).length-1;
+        
+        
+        arabic -= fourtyAndNintyCount*20;
         arabic -= fourAndNineCount*2;
         return arabic;
         }

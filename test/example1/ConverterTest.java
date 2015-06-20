@@ -145,18 +145,17 @@ public class ConverterTest {
         assertEquals(9, instance.toArabic("IX"));
     }
         
-    
-//   @Test
-//    public void testToArabicWithNumber45() {
-//        System.out.println("toArabic method converts 'XLV' to 45");
-//        Converter instance = new Converter();
-//        assertEquals(45, instance.toArabic("XLV"));
-//    }
-//    @Test
-//    public void testToArabicWithNumber39() {
-//        System.out.println("toArabic method converts 'XXXIX' to 39");
-//        Converter instance = new Converter();
-//        assertEquals(39, instance.toArabic("XXXIX"));
-//        }
+   @Test
+    public void testToArabicWithNumber45() {
+        System.out.println("toArabic method converts 'XLV' to 45");
+        Converter instance = new Converter();
+        assertEquals(45, instance.toArabic("XLV"));
+    }
+    @Test
+    public void testToArabicWithNumber39() {
+        System.out.println("toArabic method converts 'XXXIX' to 39");
+        Converter instance = new Converter();
+        assertEquals(39, instance.toArabic("XXXIX"));
+    }
 
 }
