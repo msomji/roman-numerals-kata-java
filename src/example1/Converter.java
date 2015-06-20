@@ -44,7 +44,10 @@ public class Converter {
         int fourtyAndNintyCount = x.split("XL", -1).length-1;
         fourtyAndNintyCount += x.split("XC", -1).length-1;
         
+        int fourHunderedAndNineHunderedCount = x.split("CD", -1).length-1;
+        fourHunderedAndNineHunderedCount += x.split("CM", -1).length-1;
         
+        arabic -= fourHunderedAndNineHunderedCount*200;
         arabic -= fourtyAndNintyCount*20;
         arabic -= fourAndNineCount*2;
         return arabic;

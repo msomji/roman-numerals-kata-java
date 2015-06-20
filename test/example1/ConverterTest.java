@@ -157,5 +157,11 @@ public class ConverterTest {
         Converter instance = new Converter();
         assertEquals(39, instance.toArabic("XXXIX"));
     }
+    @Test
+    public void testToArabicWithNumber494() {
+        System.out.println("toArabic method converts 'CDXCIV' to 494");
+        Converter instance = new Converter();
+        assertEquals(494, instance.toArabic("CDXCIV"));
+    }
 
 }
